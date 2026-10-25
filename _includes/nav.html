@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="rainbow-bar"></div>
+  <nav class="nav">
+    <a class="nav-logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/about.html' | relative_url }}" {% if page.url == '/about.html' %}class="active"{% endif %}>About Me</a></li>
+    </ul>
+  </nav>
+</header>
