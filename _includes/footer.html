@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <p class="footer-logo">{{ site.title }}</p>
+  <p class="footer-tagline">{{ site.tagline }}</p>
+  <ul class="footer-links">
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/about.html' | relative_url }}">About Me</a></li>
+  </ul>
+  <p class="footer-copy">&copy; {{ 'now' | date: '%Y' }} {{ site.title }}</p>
+  <div class="rainbow-bar"></div>
+</footer>
