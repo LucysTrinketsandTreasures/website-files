@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trinkets &amp; Treasures</title>
+  <meta name="description" content="Lucy's small shop selling handpicked trinkets and little treasures.">
+  <style>
+    :root {
+      --bg: #fdf6ec;
+      --ink: #3b2f2f;
+      --accent: #c96f53;
+      --soft: #8a7a6d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      text-align: center;
+      padding: 24px 16px;
+    }
+    main { max-width: 560px; }
+    .sparkle { font-size: 2.5rem; color: var(--accent); }
+    h1 { font-size: clamp(2rem, 7vw, 3.25rem); margin: 12px 0; }
+    p { font-size: 1.15rem; line-height: 1.6; color: var(--soft); }
+    .badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 10px 20px;
+      border: 2px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent);
+      font-family: system-ui, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="sparkle">&#10022;</div>
+    <h1>Trinkets &amp; Treasures</h1>
+    <p>Handpicked trinkets and little treasures, curated by Lucy.</p>
+    <span class="badge">Coming soon</span>
+  </main>
+</body>
+</html>
