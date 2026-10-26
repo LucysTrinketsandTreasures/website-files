@@ -4,7 +4,7 @@ title: Pixel Hearts
 image: pixel-hearts.jpeg
 order: 5
 color: pastel-blue
-price:
+price: "50¢"
 buy_link:
 ---
 More details about this treasure are coming soon!
