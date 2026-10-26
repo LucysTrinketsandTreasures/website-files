@@ -7,7 +7,6 @@ layout: default
   </div>
   <div>
     <h1>{{ page.name }}</h1>
-    {% if page.price %}<p class="product-price">{{ page.price }}</p>{% endif %}
     <div class="product-description">{{ content }}</div>
     <div class="product-buttons">
       {% if page.buy_link %}
@@ -17,6 +16,7 @@ layout: default
       {% endif %}
       <a class="btn btn-home" href="{{ '/' | relative_url }}">&larr; Back to Home</a>
     </div>
+    {% if page.price %}<p class="product-price">{{ page.price }}</p>{% endif %}
     <p class="buy-note" id="buy-note" hidden>Online buying is coming soon. Check back shortly!</p>
   </div>
 </section>
