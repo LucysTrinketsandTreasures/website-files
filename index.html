@@ -10,14 +10,14 @@ layout: default
 <section>
   <h2>Our Trinkets and Treasures</h2>
   <div class="product-grid">
-    <div class="product-card"><div class="product-photo"><img src="{{ '/assets/images/bookmarks.jpeg' | relative_url }}" alt="Bookmarks" loading="lazy"></div><p class="product-name">Bookmarks</p></div>
-    <div class="product-card"><div class="product-photo"><img src="{{ '/assets/images/crochet-hearts.jpeg' | relative_url }}" alt="Crochet Hearts" loading="lazy"></div><p class="product-name">Crochet Hearts</p></div>
-    <div class="product-card"><div class="product-photo"><img src="{{ '/assets/images/friendship-bracelet.jpeg' | relative_url }}" alt="Friendship Bracelets" loading="lazy"></div><p class="product-name">Friendship Bracelets</p></div>
-    <div class="product-card"><div class="product-photo"><img src="{{ '/assets/images/inpirational-clay.jpeg' | relative_url }}" alt="Inspirational Clay" loading="lazy"></div><p class="product-name">Inspirational Clay</p></div>
-    <div class="product-card"><div class="product-photo"><img src="{{ '/assets/images/pixel-hearts.jpeg' | relative_url }}" alt="Pixel Hearts" loading="lazy"></div><p class="product-name">Pixel Hearts</p></div>
-    <div class="product-card"><div class="product-photo"><img src="{{ '/assets/images/resin-keychain.jpeg' | relative_url }}" alt="Resin Keychains" loading="lazy"></div><p class="product-name">Resin Keychains</p></div>
-    <div class="product-card neon"><div class="product-photo"><img src="{{ '/assets/images/rock-buddies.jpeg' | relative_url }}" alt="Rock Buddies" loading="lazy"></div><p class="product-name">Rock Buddies</p></div>
-    <div class="product-card neon"><div class="product-photo"><img src="{{ '/assets/images/rubber-band-pencil-toppers.jpeg' | relative_url }}" alt="Rubber Band Pencil Toppers" loading="lazy"></div><p class="product-name">Rubber Band Pencil Toppers</p></div>
+    {% assign products = site.products | sort: 'order' %}
+    {% for product in products %}
+    <a class="product-card product-link{% if forloop.index > 6 %} neon{% endif %}" href="{{ product.url | relative_url }}">
+      <div class="product-photo"><img src="{{ '/assets/images/' | append: product.image | relative_url }}" alt="{{ product.name }}" loading="lazy"></div>
+      <p class="product-name">{{ product.name }}</p>
+      <span class="view-details">View details &rarr;</span>
+    </a>
+    {% endfor %}
     <div class="product-card neon"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #9</p></div>
     <div class="product-card neon"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #10</p></div>
     <div class="product-card neon"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #11</p></div>
