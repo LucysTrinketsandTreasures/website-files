@@ -1,0 +1,10 @@
+---
+name: Pixel Hearts
+title: Pixel Hearts
+image: pixel-hearts.jpeg
+order: 5
+color: pastel-blue
+price:
+buy_link:
+---
+More details about this treasure are coming soon!
