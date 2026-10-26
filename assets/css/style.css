@@ -15,6 +15,12 @@
   --neon-blue: #1f51ff;
   --neon-purple: #bc13fe;
 
+  /* Neutrals */
+  --box-white: #ffffff;
+  --box-black: #1f1b20;
+  --box-brown: #8b5e3c;
+  --box-gray: #9e9a9f;
+
   --bg: #fffdf9;
   --ink: #4a3f4f;
   --ink-soft: #7d7184;
@@ -153,6 +159,13 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .btn-home { background: #fff; border-color: var(--pastel-blue); }
 .btn-home:hover { background: var(--pastel-blue); }
 .buy-note { margin-top: 12px; color: var(--ink-soft); }
+
+/* Neutral cards (white, black, brown, gray) */
+.product-grid .product-card.box-white .product-photo { background: var(--box-white); color: var(--ink); box-shadow: inset 0 0 0 2px #e6e1e8; }
+.product-grid .product-card.box-black .product-photo { background: var(--box-black); color: #fff; }
+.product-grid .product-card.box-brown .product-photo { background: var(--box-brown); color: #fff; }
+.product-grid .product-card.box-gray .product-photo { background: var(--box-gray); color: #1a1a1a; }
+.product-grid .product-card[class*="box-"] .product-photo { font-weight: 700; }
 
 /* About */
 .about { max-width: 640px; margin: 0 auto; }
