@@ -8,4 +8,4 @@ price: "25¢"
 amount: "0.25"
 buy_link:
 ---
-More details about this treasure are coming soon!
+These were very hard at first, but after a while, it became second nature! I have pencil toppers other butterflies. I can make a strawberry, cherry, banana, flower, and a snowflake.
