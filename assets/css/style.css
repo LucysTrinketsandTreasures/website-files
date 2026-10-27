@@ -169,6 +169,7 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 
 /* Buy options */
 .buy-options { margin-top: 16px; padding: 16px; border-radius: 16px; background: #fff; box-shadow: 0 4px 14px rgba(74, 63, 79, 0.08); display: flex; flex-direction: column; gap: 10px; }
+.buy-options[hidden], .buy-note[hidden] { display: none; }
 .buy-options-title { font-weight: 600; }
 .buy-option { text-align: center; border-color: var(--pastel-purple); background: #fff; }
 .buy-email:hover { background: var(--pastel-yellow); }
