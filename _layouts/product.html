@@ -40,7 +40,7 @@ Best way to reach me:{% endcapture %}
       <a class="btn buy-option buy-email" href="mailto:{{ site.shop_email }}?subject={{ subject | url_encode | replace: '+', '%20' }}&body={{ body | url_encode | replace: '+', '%20' }}">Email an order</a>
       {% endif %}
       {% if site.venmo_username %}
-      <a class="btn buy-option buy-venmo" href="https://venmo.com/{{ site.venmo_username }}?txn=pay{% if page.amount %}&amount={{ page.amount }}{% endif %}&note={{ order_note | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">Pay with Venmo</a>
+      <a class="btn buy-option buy-venmo" href="https://account.venmo.com/pay?txn=pay&recipients={{ site.venmo_username }}{% if page.amount %}&amount={{ page.amount }}{% endif %}&note={{ order_note | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">Pay with Venmo</a>
       {% endif %}
       {% if site.paypal_me_username %}
       <a class="btn buy-option buy-paypal" href="https://paypal.me/{{ site.paypal_me_username }}{% if page.amount %}/{{ page.amount }}USD{% endif %}" target="_blank" rel="noopener">Pay with PayPal</a>
