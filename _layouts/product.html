@@ -37,7 +37,16 @@ layout: default
 Quantity:
 My name:
 Best way to reach me:{% endcapture %}
-      <a class="btn buy-option buy-email" href="mailto:{{ site.shop_email }}?subject={{ subject | url_encode | replace: '+', '%20' }}&body={{ body | url_encode | replace: '+', '%20' }}">Email an order</a>
+      {% assign subject_enc = subject | url_encode | replace: '+', '%20' %}
+      {% assign body_enc = body | url_encode | replace: '+', '%20' %}
+      <a class="btn buy-option buy-email" href="mailto:{{ site.shop_email }}?subject={{ subject_enc }}&body={{ body_enc }}">Email an order</a>
+      <div class="email-fallback">
+        <p>Email app didn't open? Try one of these:</p>
+        <a class="btn buy-option buy-gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to={{ site.shop_email }}&su={{ subject_enc }}&body={{ body_enc }}" target="_blank" rel="noopener">Email using Gmail</a>
+        <p class="email-copy">Or email us at <strong>{{ site.shop_email }}</strong>
+          <button class="copy-email" type="button" onclick="var b=this; navigator.clipboard.writeText('{{ site.shop_email }}').then(function(){ b.textContent='Copied!'; }, function(){ b.textContent='Copy failed'; });">Copy</button>
+        </p>
+      </div>
       {% endif %}
       {% if site.venmo_username %}
       <a class="btn buy-option buy-venmo" href="https://account.venmo.com/pay?txn=pay&recipients={{ site.venmo_username }}{% if page.amount %}&amount={{ page.amount }}{% endif %}&note={{ order_note | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">Pay with Venmo</a>
