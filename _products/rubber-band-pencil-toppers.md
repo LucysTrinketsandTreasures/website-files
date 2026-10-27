@@ -4,8 +4,8 @@ title: Rubber Band Pencil Toppers
 image: rubber-band-pencil-toppers.jpeg
 order: 8
 color: neon-orange
-price: "50¢"
-amount: "0.50"
+price: "25¢"
+amount: "0.25"
 buy_link:
 ---
 More details about this treasure are coming soon!
