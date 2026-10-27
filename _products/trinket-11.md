@@ -1,7 +1,7 @@
 ---
 name: Rubber Band Necklaces
 title: Rubber Band Necklaces
-image:
+image: rubber-band-necklace.jpeg
 permalink: /products/rubber-band-necklaces/
 order: 11
 color: neon-blue
