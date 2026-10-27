@@ -1,7 +1,8 @@
 ---
-name: "Trinket #9"
-title: "Trinket #9"
-image:
+name: Crochet Scrunchies
+title: Crochet Scrunchies
+image: crochet-scrunchie.jpeg
+permalink: /products/crochet-scrunchies/
 order: 9
 color: neon-yellow
 price:

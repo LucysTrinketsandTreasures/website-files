@@ -1,7 +1,8 @@
 ---
-name: "Trinket #11"
-title: "Trinket #11"
+name: Rubber Band Necklaces
+title: Rubber Band Necklaces
 image:
+permalink: /products/rubber-band-necklaces/
 order: 11
 color: neon-blue
 price:

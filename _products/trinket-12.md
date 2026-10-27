@@ -1,7 +1,8 @@
 ---
-name: "Trinket #12"
-title: "Trinket #12"
-image:
+name: Rubber Band Rings
+title: Rubber Band Rings
+image: rubber-band-ring.jpeg
+permalink: /products/rubber-band-rings/
 order: 12
 color: neon-purple
 price:
