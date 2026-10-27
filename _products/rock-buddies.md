@@ -8,4 +8,4 @@ price: "25¢"
 amount: "0.25"
 buy_link:
 ---
-More details about this treasure are coming soon!
+These are pretty easy to make, and their amount of derp is funny and kind of cute!
