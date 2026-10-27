@@ -167,6 +167,20 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .product-grid .product-card.box-gray .product-photo { background: var(--box-gray); color: #1a1a1a; }
 .product-grid .product-card[class*="box-"] .product-photo { font-weight: 700; }
 
+/* Buy options */
+.buy-options { margin-top: 16px; padding: 16px; border-radius: 16px; background: #fff; box-shadow: 0 4px 14px rgba(74, 63, 79, 0.08); display: flex; flex-direction: column; gap: 10px; }
+.buy-options-title { font-weight: 600; }
+.buy-option { text-align: center; border-color: var(--pastel-purple); background: #fff; }
+.buy-email:hover { background: var(--pastel-yellow); }
+.buy-venmo:hover { background: var(--pastel-blue); }
+.buy-paypal:hover { background: var(--pastel-purple); }
+.buy-options-hint { font-size: 0.9rem; color: var(--ink-soft); }
+.buy-options .buy-note { margin-top: 0; }
+
+/* Product page placeholder (no photo yet) */
+.photo-placeholder { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
+.product-detail-photo.box-white { box-shadow: inset 0 0 0 2px #e6e1e8; }
+
 /* About */
 .about { max-width: 640px; margin: 0 auto; }
 .about p { margin-bottom: 16px; font-size: 1.1rem; }
