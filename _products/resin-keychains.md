@@ -8,4 +8,4 @@ price: "$1.00"
 amount: "1.00"
 buy_link:
 ---
-More details about this treasure are coming soon!
+I'm a very big crafter, and this was my first resin craft. It was fun though!
