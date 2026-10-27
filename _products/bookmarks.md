@@ -8,4 +8,4 @@ price: "$3.00"
 amount: "3.00"
 buy_link:
 ---
-More details about this treasure are coming soon!
+One of my favorite hobbies is flower pressing! And I love reading, so that's one of the reasons why I decided to make these bookmarks!
