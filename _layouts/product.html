@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
+{% include product-colors.html color=page.color %}
 <section class="product-detail">
-  <div class="product-detail-photo" style="--frame: var(--{{ page.color }});">
+  <div class="product-detail-photo {{ page.color }}" style="--frame: var(--{{ page.color }});">
+    {% if page.image %}
     <img src="{{ '/assets/images/' | append: page.image | relative_url }}" alt="{{ page.name }}">
+    {% else %}
+    <div class="photo-placeholder" style="color: {{ text_color }};">Photo coming soon</div>
+    {% endif %}
   </div>
   <div>
     <h1>{{ page.name }}</h1>
@@ -12,11 +17,39 @@ layout: default
       {% if page.buy_link %}
       <a class="btn btn-buy" href="{{ page.buy_link }}">Buy</a>
       {% else %}
-      <button class="btn btn-buy" type="button" onclick="document.getElementById('buy-note').hidden = false;">Buy</button>
+      <button class="btn btn-buy" type="button" aria-expanded="false" aria-controls="buy-options"
+        onclick="var o=document.getElementById('buy-options'); o.hidden=!o.hidden; this.setAttribute('aria-expanded', !o.hidden);">Buy</button>
       {% endif %}
       <a class="btn btn-home" href="{{ '/' | relative_url }}">&larr; Back to Home</a>
     </div>
     {% if page.price %}<p class="product-price">{{ page.price }}</p>{% endif %}
-    <p class="buy-note" id="buy-note" hidden>Online buying is coming soon. Check back shortly!</p>
+
+    {% unless page.buy_link %}
+    {% assign item = page.name %}{% if page.price %}{% assign item = page.name | append: " (" | append: page.price | replace: "<br>", ", " | append: ")" %}{% endif %}
+    {% capture order_note %}Trinkets & Treasures: {{ page.name }}{% endcapture %}
+    <div class="buy-options" id="buy-options" hidden>
+      {% if site.shop_email or site.venmo_username or site.paypal_me_username %}
+      <p class="buy-options-title">How would you like to buy?</p>
+      {% if site.shop_email %}
+      {% capture subject %}Order: {{ page.name }}{% endcapture %}
+      {% capture body %}Hi Lucy! I'd like to order: {{ item }}.
+
+Quantity:
+My name:
+Best way to reach me:{% endcapture %}
+      <a class="btn buy-option buy-email" href="mailto:{{ site.shop_email }}?subject={{ subject | url_encode | replace: '+', '%20' }}&body={{ body | url_encode | replace: '+', '%20' }}">Email an order</a>
+      {% endif %}
+      {% if site.venmo_username %}
+      <a class="btn buy-option buy-venmo" href="https://venmo.com/{{ site.venmo_username }}?txn=pay{% if page.amount %}&amount={{ page.amount }}{% endif %}&note={{ order_note | url_encode | replace: '+', '%20' }}" target="_blank" rel="noopener">Pay with Venmo</a>
+      {% endif %}
+      {% if site.paypal_me_username %}
+      <a class="btn buy-option buy-paypal" href="https://paypal.me/{{ site.paypal_me_username }}{% if page.amount %}/{{ page.amount }}USD{% endif %}" target="_blank" rel="noopener">Pay with PayPal</a>
+      {% endif %}
+      <p class="buy-options-hint">If you pay with Venmo or PayPal, please include the item name in the note.</p>
+      {% else %}
+      <p class="buy-note">Online buying is coming soon. Check back shortly!</p>
+      {% endif %}
+    </div>
+    {% endunless %}
   </div>
 </section>
