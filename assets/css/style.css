@@ -176,6 +176,8 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .buy-paypal:hover { background: var(--pastel-purple); }
 .buy-options-hint { font-size: 0.9rem; color: var(--ink-soft); }
 .buy-options .buy-note { margin-top: 0; }
+.buy-cancel { background: transparent; border-color: #e6e1e8; color: var(--ink-soft); font-size: 0.95rem; text-align: center; }
+.buy-cancel:hover { background: #f3eff5; color: var(--ink); }
 
 /* Product page placeholder (no photo yet) */
 .photo-placeholder { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
