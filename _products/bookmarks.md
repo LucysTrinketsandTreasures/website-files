@@ -5,6 +5,7 @@ image: bookmarks.jpeg
 order: 1
 color: pastel-red
 price: "$3.00"
+amount: "3.00"
 buy_link:
 ---
 More details about this treasure are coming soon!
