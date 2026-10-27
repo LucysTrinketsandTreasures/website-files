@@ -12,19 +12,14 @@ layout: default
   <div class="product-grid">
     {% assign products = site.products | sort: 'order' %}
     {% for product in products %}
-    <a class="product-card product-link{% if forloop.index > 6 %} neon{% endif %}" href="{{ product.url | relative_url }}">
-      <div class="product-photo"><img src="{{ '/assets/images/' | append: product.image | relative_url }}" alt="{{ product.name }}" loading="lazy"></div>
+    {% include product-colors.html color=product.color %}
+    <a class="product-card product-link {{ product.color }}" href="{{ product.url | relative_url }}">
+      <div class="product-photo" style="background: var(--{{ product.color }}); color: {{ text_color }};">
+        {% if product.image %}<img src="{{ '/assets/images/' | append: product.image | relative_url }}" alt="{{ product.name }}" loading="lazy">{% else %}Photo coming soon{% endif %}
+      </div>
       <p class="product-name">{{ product.name }}</p>
       <span class="view-details">View details &rarr;</span>
     </a>
     {% endfor %}
-    <div class="product-card neon"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #9</p></div>
-    <div class="product-card neon"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #10</p></div>
-    <div class="product-card neon"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #11</p></div>
-    <div class="product-card neon"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #12</p></div>
-    <div class="product-card box-white"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #13</p></div>
-    <div class="product-card box-black"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #14</p></div>
-    <div class="product-card box-brown"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #15</p></div>
-    <div class="product-card box-gray"><div class="product-photo">Photo coming soon</div><p class="product-name">Trinket #16</p></div>
   </div>
 </section>

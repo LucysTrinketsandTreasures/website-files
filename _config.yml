@@ -2,6 +2,11 @@ title: Trinkets & Treasures
 tagline: Something for everyone
 description: Lucy's small shop selling handpicked trinkets and little treasures.
 
+# Buy options (leave blank to hide that option)
+shop_email:
+venmo_username:
+paypal_me_username:
+
 collections:
   products:
     output: true
