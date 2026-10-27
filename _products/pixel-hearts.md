@@ -8,4 +8,4 @@ price: "50¢"
 amount: "0.50"
 buy_link:
 ---
-More details about this treasure are coming soon!
+If I do say so myself, these make pretty good valentines!
