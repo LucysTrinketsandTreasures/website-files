@@ -3,9 +3,9 @@ tagline: Something for everyone
 description: Lucy's small shop selling handpicked trinkets and little treasures.
 
 # Buy options (leave blank to hide that option)
-shop_email:
-venmo_username:
-paypal_me_username:
+shop_email: lucystr1nketsandtreasures@gmail.com
+venmo_username: Jordyn-Haroldsen
+paypal_me_username: HansHaroldsen
 
 collections:
   products:
