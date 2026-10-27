@@ -8,4 +8,4 @@ price: "$1.00 for one<br>$1.50 for two"
 amount: "1.00"
 buy_link:
 ---
-More details about this treasure are coming soon!
+This is a bit more complicated than most bracelets, but they're incredibly fun to make!
