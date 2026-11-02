@@ -25,6 +25,12 @@
   --box-mauve: #b98aa8;
   --box-coral: #ff7f6b;
 
+  /* Metallics (shiny gradients) */
+  --metal-silver: linear-gradient(135deg, #8e9093 0%, #e8e9eb 25%, #ffffff 40%, #b8babd 55%, #e3e4e6 75%, #9a9c9f 100%);
+  --metal-gold: linear-gradient(135deg, #b8860b 0%, #f5d76e 25%, #fff6c8 40%, #d4a62a 55%, #f3cf57 75%, #a67c00 100%);
+  --metal-bronze: linear-gradient(135deg, #6e4a24 0%, #b07d48 25%, #e3b47c 40%, #8c5e30 55%, #c08c55 75%, #5e3c1a 100%);
+  --metal-copper: linear-gradient(135deg, #8a3f1d 0%, #d4794a 25%, #f6b38a 40%, #b55a2e 55%, #e08a5c 75%, #7a3416 100%);
+
   --bg: #fffdf9;
   --ink: #4a3f4f;
   --ink-soft: #7d7184;
@@ -230,4 +236,27 @@ img { max-width: 100%; }
 /* Very small phones */
 @media (max-width: 360px) {
   .product-buttons .btn { width: 100%; text-align: center; }
+}
+
+/* Metallic boxes: moving shine across the color */
+[class*="metal-"] .product-photo:not(:has(img)), .product-detail-photo[class*="metal-"] { position: relative; overflow: hidden; isolation: isolate; }
+[class*="metal-"] .product-photo:not(:has(img))::after,
+.product-detail-photo[class*="metal-"]:not(:has(img))::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.6) 45%, transparent 60%);
+  transform: translateX(-100%);
+  animation: metal-sheen 3.5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+.metal-bronze .product-photo, .metal-copper .product-photo, .photo-placeholder { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
+.metal-silver .product-photo, .metal-gold .product-photo { text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6); }
+@keyframes metal-sheen {
+  0% { transform: translateX(-100%); }
+  60%, 100% { transform: translateX(100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  [class*="metal-"] .product-photo::after, .product-detail-photo[class*="metal-"]::after { animation: none; display: none; }
 }
