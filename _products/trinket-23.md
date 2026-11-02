@@ -3,6 +3,7 @@ name: "Trinket #23"
 title: "Trinket #23"
 image:
 order: 23
+special: true
 color: metal-bronze
 price:
 amount:
