@@ -1,0 +1,8 @@
+{% include product-colors.html color=include.product.color %}
+<a class="product-card product-link {{ include.product.color }}" href="{{ include.product.url | relative_url }}">
+  <div class="product-photo" style="background: var(--{{ include.product.color }}); color: {{ text_color }};">
+    {% if include.product.image %}<img src="{{ '/assets/images/' | append: include.product.image | relative_url }}" alt="{{ include.product.name }}" loading="lazy">{% else %}Photo coming soon{% endif %}
+  </div>
+  <p class="product-name">{{ include.product.name }}</p>
+  <span class="view-details">View details &rarr;</span>
+</a>
