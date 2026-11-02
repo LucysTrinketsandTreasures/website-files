@@ -80,6 +80,7 @@ a { color: inherit; }
 }
 .nav-links a:hover { background: var(--pastel-blue); }
 .nav-links a.active { background: var(--pastel-purple); }
+.nav-links a.nav-special:hover, .nav-links a.nav-special:focus-visible, .nav-links a.nav-special:active, .nav-links a.nav-special.active { background: var(--metal-gold); color: #1a1a1a; box-shadow: 0 2px 8px rgba(184, 134, 11, 0.35); }
 
 /* Hero */
 .hero { text-align: center; padding: 40px 0 32px; }
