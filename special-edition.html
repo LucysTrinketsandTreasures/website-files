@@ -1,0 +1,18 @@
+---
+layout: default
+title: Special Edition Products
+permalink: /special-edition/
+---
+<section class="hero">
+  <h1>Special Edition Products</h1>
+  <p class="intro">Shiny, one-of-a-kind treasures. Photos are coming soon!</p>
+</section>
+
+<section>
+  <div class="product-grid">
+    {% assign specials = site.products | where: "special", true | sort: 'order' %}
+    {% for product in specials %}
+    {% include product-card.html product=product %}
+    {% endfor %}
+  </div>
+</section>

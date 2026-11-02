@@ -10,16 +10,9 @@ layout: default
 <section>
   <h2>Our Trinkets and Treasures</h2>
   <div class="product-grid">
-    {% assign products = site.products | sort: 'order' %}
+    {% assign products = site.products | where_exp: "p", "p.special != true" | sort: 'order' %}
     {% for product in products %}
-    {% include product-colors.html color=product.color %}
-    <a class="product-card product-link {{ product.color }}" href="{{ product.url | relative_url }}">
-      <div class="product-photo" style="background: var(--{{ product.color }}); color: {{ text_color }};">
-        {% if product.image %}<img src="{{ '/assets/images/' | append: product.image | relative_url }}" alt="{{ product.name }}" loading="lazy">{% else %}Photo coming soon{% endif %}
-      </div>
-      <p class="product-name">{{ product.name }}</p>
-      <span class="view-details">View details &rarr;</span>
-    </a>
+    {% include product-card.html product=product %}
     {% endfor %}
   </div>
 </section>
