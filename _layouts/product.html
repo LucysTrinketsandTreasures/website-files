@@ -20,7 +20,11 @@ layout: default
       <button class="btn btn-buy" id="buy-button" type="button" aria-expanded="false" aria-controls="buy-options"
         onclick="toggleBuyOptions(true);">Buy</button>
       {% endif %}
+      {% if page.special %}
+      <a class="btn btn-home" href="{{ '/special-edition/' | relative_url }}">&larr; Back to Special Edition</a>
+      {% else %}
       <a class="btn btn-home" href="{{ '/' | relative_url }}">&larr; Back to Home</a>
+      {% endif %}
     </div>
     {% if page.price %}<p class="product-price">{{ page.price }}</p>{% endif %}
 
