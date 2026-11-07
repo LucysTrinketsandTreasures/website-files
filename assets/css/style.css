@@ -223,6 +223,10 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .egg-sapphire { background: #2f6fdb; }
 .egg-brooklyn { background: #9fd4f7; }
 .egg-ruby { background: #f2a0b6; }
+.egg-queen-daisy { background: #f6e7c1; }
+.egg-titan { background: linear-gradient(170deg, #e0262b 0%, #f2542d 45%, #ff9a2e 100%); }
+.cat-head { width: 96px; height: 96px; margin: 6px auto 6px; }
+.cat-head svg { display: block; width: 100%; height: 100%; }
 .egg-speckle { background-color: #b8eea0; background-image: radial-gradient(circle, #2e9e4f 3px, transparent 4px), radial-gradient(circle, #ff8a2b 2.5px, transparent 3.5px); background-size: 22px 22px, 16px 16px; background-position: 0 0, 7px 9px; }
 
 /* About */
@@ -291,6 +295,7 @@ img { max-width: 100%; }
   .dragon-columns .dragon-grid { flex-direction: row; justify-content: center; gap: 10px; }
   .dragon-card { width: 106px; padding: 14px 6px 10px; }
   .dragon-egg { width: 64px; height: 82px; }
+  .cat-head { width: 76px; height: 76px; margin: 3px auto; }
   .dragon-name { font-size: 1.35rem; }
   .rarity { font-size: 0.7rem; padding: 2px 8px; }
 }
