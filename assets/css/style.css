@@ -212,7 +212,8 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .dragon-name { margin-top: 10px; font-family: var(--font-script); font-size: 1.7rem; }
 .rarity { display: inline-block; margin-top: 6px; padding: 2px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
 .rarity-legendary { background: var(--metal-gold); color: #1a1a1a; box-shadow: 0 2px 6px rgba(184, 134, 11, 0.35); }
-.rarity-rare { background: var(--pastel-purple); color: var(--ink); }
+.rarity-rare { background: #9b3dff; color: #fff; }
+.rarity-epic { background: #2f80ed; color: #fff; }
 .rarity-common { background: #eeeaf0; color: var(--ink-soft); }
 .egg-lavender { background: #b99ae8; }
 .egg-emerald { background: #2fbf71; }
