@@ -207,6 +207,8 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .book-story p { font-size: 1.1rem; margin-bottom: 14px; }
 .dragon-group { text-align: center; font-weight: 600; font-size: 1.1rem; color: var(--ink-soft); margin: 18px 0 12px; }
 .dragon-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 8px; }
+.dragon-columns { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 16px; }
+.dragon-columns .dragon-grid { flex-direction: column; align-items: center; margin: 0; }
 .dragon-card { width: 150px; padding: 18px 12px 12px; border-radius: 18px; background: #fff; box-shadow: 0 4px 14px rgba(74, 63, 79, 0.08); text-align: center; }
 .dragon-egg { width: 84px; height: 108px; margin: 0 auto; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; display: flex; align-items: center; justify-content: center; font: 400 2.2rem var(--font-script); color: #fff; box-shadow: inset -8px -10px 0 rgba(0, 0, 0, 0.08), inset 6px 8px 0 rgba(255, 255, 255, 0.35); }
 .dragon-name { margin-top: 10px; font-family: var(--font-script); font-size: 1.7rem; }
@@ -281,4 +283,14 @@ img { max-width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   [class*="metal-"] .product-photo::after, .product-detail-photo[class*="metal-"]::after { animation: none; display: none; }
+}
+
+/* My Book page on phones: one row per rarity */
+@media (max-width: 600px) {
+  .dragon-columns { flex-direction: column; align-items: center; gap: 12px; }
+  .dragon-columns .dragon-grid { flex-direction: row; justify-content: center; gap: 10px; }
+  .dragon-card { width: 106px; padding: 14px 6px 10px; }
+  .dragon-egg { width: 64px; height: 82px; }
+  .dragon-name { font-size: 1.35rem; }
+  .rarity { font-size: 0.7rem; padding: 2px 8px; }
 }
