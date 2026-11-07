@@ -212,10 +212,11 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .dragon-name { margin-top: 10px; font-family: var(--font-script); font-size: 1.7rem; }
 .egg-lavender { background: #b99ae8; }
 .egg-emerald { background: #2fbf71; }
-.egg-grayson { background: #9e9a9f; }
+.egg-grayson { background: #e0393e; }
 .egg-sapphire { background: #2f6fdb; }
 .egg-brooklyn { background: #9fd4f7; }
-.egg-speckle { background-color: #efe3c8; background-image: radial-gradient(circle, #8b5e3c 3px, transparent 4px), radial-gradient(circle, #c38b5f 2px, transparent 3px); background-size: 22px 22px, 15px 15px; background-position: 0 0, 7px 9px; }
+.egg-ruby { background: #f2a0b6; }
+.egg-speckle { background-color: #b8eea0; background-image: radial-gradient(circle, #2e9e4f 3px, transparent 4px), radial-gradient(circle, #ff8a2b 2.5px, transparent 3.5px); background-size: 22px 22px, 16px 16px; background-position: 0 0, 7px 9px; }
 
 /* About */
 .about { max-width: 640px; margin: 0 auto; }
