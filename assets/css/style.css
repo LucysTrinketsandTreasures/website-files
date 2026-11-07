@@ -223,7 +223,11 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .egg-sapphire { background: #2f6fdb; }
 .egg-brooklyn { background: #9fd4f7; }
 .egg-ruby { background: #f2a0b6; }
-.egg-queen-daisy { background: #f8e08e; }
+.egg-queen-daisy { background: #f6d45a; }
+.egg-lilac { background: #7b3fb8; }
+.egg-rose { background: #c2185b; }
+.egg-poppy { background: #f04a24; }
+.egg-midnight { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36'%3E%3Cpath d='M8 4 L9 7 L12 8 L9 9 L8 12 L7 9 L4 8 L7 7 Z' fill='%23fff7c2'/%3E%3Cpath d='M26 18 L26.7 20.3 L29 21 L26.7 21.7 L26 24 L25.3 21.7 L23 21 L25.3 20.3 Z' fill='%23ffffff'/%3E%3Ccircle cx='18' cy='30' r='0.9' fill='%23ffffff'/%3E%3Ccircle cx='31' cy='6' r='0.7' fill='%23fff7c2'/%3E%3C/svg%3E") 0 0 / 36px 36px, #15141c; }
 .egg-titan { background: linear-gradient(170deg, #e0262b 0%, #f2542d 45%, #ff9a2e 100%); }
 .cat-head { width: 96px; height: 96px; margin: 6px auto 6px; }
 .cat-head svg { display: block; width: 100%; height: 100%; }
