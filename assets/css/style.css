@@ -202,6 +202,21 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .photo-placeholder { aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
 .product-detail-photo.box-white { box-shadow: inset 0 0 0 2px #e6e1e8; }
 
+/* My Book page */
+.book-story { max-width: 640px; margin: 0 auto 12px; text-align: center; }
+.book-story p { font-size: 1.1rem; margin-bottom: 14px; }
+.dragon-group { text-align: center; font-weight: 600; font-size: 1.1rem; color: var(--ink-soft); margin: 18px 0 12px; }
+.dragon-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 8px; }
+.dragon-card { width: 150px; padding: 18px 12px 12px; border-radius: 18px; background: #fff; box-shadow: 0 4px 14px rgba(74, 63, 79, 0.08); text-align: center; }
+.dragon-egg { width: 84px; height: 108px; margin: 0 auto; border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; display: flex; align-items: center; justify-content: center; font: 400 2.2rem var(--font-script); color: #fff; box-shadow: inset -8px -10px 0 rgba(0, 0, 0, 0.08), inset 6px 8px 0 rgba(255, 255, 255, 0.35); }
+.dragon-name { margin-top: 10px; font-family: var(--font-script); font-size: 1.7rem; }
+.egg-lavender { background: #b99ae8; }
+.egg-emerald { background: #2fbf71; }
+.egg-grayson { background: #9e9a9f; }
+.egg-sapphire { background: #2f6fdb; }
+.egg-brooklyn { background: linear-gradient(135deg, var(--pastel-red), var(--pastel-yellow), var(--pastel-blue), var(--pastel-purple)); color: var(--ink); }
+.egg-speckle { background-color: #efe3c8; background-image: radial-gradient(circle, #8b5e3c 3px, transparent 4px), radial-gradient(circle, #c38b5f 2px, transparent 3px); background-size: 22px 22px, 15px 15px; background-position: 0 0, 7px 9px; }
+
 /* About */
 .about { max-width: 640px; margin: 0 auto; }
 .about p { margin-bottom: 16px; font-size: 1.1rem; }
