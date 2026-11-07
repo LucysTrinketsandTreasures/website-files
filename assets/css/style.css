@@ -214,7 +214,7 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .egg-emerald { background: #2fbf71; }
 .egg-grayson { background: #9e9a9f; }
 .egg-sapphire { background: #2f6fdb; }
-.egg-brooklyn { background: linear-gradient(135deg, var(--pastel-red), var(--pastel-yellow), var(--pastel-blue), var(--pastel-purple)); color: var(--ink); }
+.egg-brooklyn { background: #9fd4f7; }
 .egg-speckle { background-color: #efe3c8; background-image: radial-gradient(circle, #8b5e3c 3px, transparent 4px), radial-gradient(circle, #c38b5f 2px, transparent 3px); background-size: 22px 22px, 15px 15px; background-position: 0 0, 7px 9px; }
 
 /* About */
