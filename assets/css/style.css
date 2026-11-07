@@ -223,7 +223,7 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .egg-sapphire { background: #2f6fdb; }
 .egg-brooklyn { background: #9fd4f7; }
 .egg-ruby { background: #f2a0b6; }
-.egg-queen-daisy { background: #f6e7c1; }
+.egg-queen-daisy { background: #f8e08e; }
 .egg-titan { background: linear-gradient(170deg, #e0262b 0%, #f2542d 45%, #ff9a2e 100%); }
 .cat-head { width: 96px; height: 96px; margin: 6px auto 6px; }
 .cat-head svg { display: block; width: 100%; height: 100%; }
