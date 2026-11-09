@@ -12,7 +12,7 @@
 </head>
 <body>
   {% include nav.html %}
-  <main>
+  <main{% if page.main_class %} class="{{ page.main_class }}"{% endif %}>
     {{ content }}
   </main>
   {% include footer.html %}
