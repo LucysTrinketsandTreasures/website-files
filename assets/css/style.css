@@ -203,6 +203,7 @@ a.product-card:hover .view-details { background: var(--pastel-purple); }
 .product-detail-photo.box-white { box-shadow: inset 0 0 0 2px #e6e1e8; }
 
 /* My Book page */
+.book-title { font-family: "Almendra Display", serif; font-size: clamp(3rem, 11vw, 5rem); line-height: 1.1; margin-top: 12px; color: var(--ink); }
 .book-story { max-width: 640px; margin: 0 auto 12px; text-align: center; }
 .book-story p { font-size: 1.1rem; margin-bottom: 14px; }
 .dragon-group { text-align: center; font-weight: 600; font-size: 1.1rem; color: var(--ink-soft); margin: 18px 0 12px; }
