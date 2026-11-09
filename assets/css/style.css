@@ -304,3 +304,11 @@ img { max-width: 100%; }
   .dragon-name { font-size: 1.35rem; }
   .rarity { font-size: 0.7rem; padding: 2px 8px; }
 }
+
+/* My Book page: whole page in Almendra Display (this page only) */
+.book-page, .book-page h1, .book-page h2, .book-page h3, .book-page p, .book-page strong { font-family: "Almendra Display", serif; }
+.book-page h1, .book-page .book-title { -webkit-text-stroke: 0.6px currentColor; }
+.book-page h2, .book-page h3, .book-page .tagline, .book-page .book-story p { color: #3a3040; -webkit-text-stroke: 0.5px currentColor; }
+.book-page .book-story p { font-size: 1.35rem; }
+.book-page .dragon-name { -webkit-text-stroke: 0.4px currentColor; }
+.book-page .rarity { text-transform: none; font-size: 1rem; letter-spacing: 0.02em; -webkit-text-stroke: 0.3px currentColor; }
