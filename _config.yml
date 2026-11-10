@@ -11,6 +11,9 @@ collections:
   products:
     output: true
     permalink: /products/:name/
+  characters:
+    output: true
+    permalink: /book/:name/
 
 defaults:
   - scope:
@@ -18,3 +21,9 @@ defaults:
       type: products
     values:
       layout: product
+  - scope:
+      path: ""
+      type: characters
+    values:
+      layout: character
+      main_class: book-page
