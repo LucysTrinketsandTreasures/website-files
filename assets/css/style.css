@@ -313,3 +313,9 @@ img { max-width: 100%; }
 .book-page .book-story p { font-size: 1.35rem; }
 .book-page .dragon-name { -webkit-text-stroke: 0.4px currentColor; }
 .book-page .rarity { text-transform: none; font-size: 1rem; letter-spacing: 0.02em; -webkit-text-stroke: 0.3px currentColor; }
+
+/* Longer character names: smaller text, same line height, so cards line up */
+.dragon-name.name-long { font-size: 1.4rem; line-height: 2.72rem; white-space: nowrap; }
+@media (max-width: 600px) {
+  .dragon-name.name-long { font-size: 1.1rem; line-height: 2.16rem; }
+}
