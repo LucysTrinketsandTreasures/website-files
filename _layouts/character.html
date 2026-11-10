@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section class="character-detail">
+  <div class="character-art">
+    {% if page.cat %}{% include sunny-cat.html %}{% else %}<div class="dragon-egg egg-large egg-{{ page.egg }}"></div>{% endif %}
+  </div>
+  <h1>{{ page.name }}</h1>
+  <p class="rarity rarity-{{ page.rarity }}">{{ page.rarity | capitalize }}</p>
+  <div class="character-description">{{ content }}</div>
+  <a class="btn btn-home" href="{{ '/book/' | relative_url }}">&larr; Back to My Book</a>
+</section>
