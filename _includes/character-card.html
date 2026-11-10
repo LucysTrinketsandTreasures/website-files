@@ -1,0 +1,7 @@
+{% assign c = include.character %}
+<div class="dragon-card">
+  {% if c.cat %}{% include sunny-cat.html %}{% else %}<div class="dragon-egg egg-{{ c.egg }}"></div>{% endif %}
+  <p class="dragon-name{% if c.long_name %} name-long{% endif %}">{{ c.name }}</p>
+  <p class="rarity rarity-{{ c.rarity }}">{{ c.rarity | capitalize }}</p>
+  <a class="character-details" href="{{ c.url | relative_url }}">View details &rarr;</a>
+</div>
