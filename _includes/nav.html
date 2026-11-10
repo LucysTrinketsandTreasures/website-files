@@ -5,7 +5,7 @@
     <ul class="nav-links">
       <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
       <li><a class="nav-special{% if page.url == '/special-edition/' %} active{% endif %}" href="{{ '/special-edition/' | relative_url }}">Special Edition</a></li>
-      <li><a href="{{ '/book/' | relative_url }}" {% if page.url contains '/book/' %}class="active"{% endif %}>My Book</a></li>
+      <li><a href="{{ '/book/' | relative_url }}" {% if page.url contains '/book/' %}class="active"{% endif %}>My Book Characters</a></li>
       <li><a href="{{ '/about.html' | relative_url }}" {% if page.url == '/about.html' %}class="active"{% endif %}>About Me</a></li>
     </ul>
   </nav>
