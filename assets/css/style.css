@@ -330,6 +330,8 @@ img { max-width: 100%; }
 .character-detail h1 { font-size: clamp(2.6rem, 9vw, 3.6rem); line-height: 1.15; }
 .book-page .character-detail .rarity { font-size: 1.1rem; margin: 8px 0 16px; }
 .character-description p { font-size: 1.3rem; margin-bottom: 12px; }
+.book-page .character-description p { color: #3a3040; -webkit-text-stroke: 0.5px currentColor; }
+.book-page .character-detail .btn-home { font-family: "Almendra Display", serif; font-size: 1.15rem; -webkit-text-stroke: 0.3px currentColor; }
 .book-page .character-details { font-family: "Almendra Display", serif; font-size: 0.95rem; font-weight: 400; -webkit-text-stroke: 0.3px currentColor; }
 @media (max-width: 600px) {
   .book-page .character-details { font-size: 0.8rem; padding: 2px 6px; }
